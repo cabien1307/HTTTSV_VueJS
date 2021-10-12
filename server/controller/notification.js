@@ -22,7 +22,7 @@ class notificationController {
         const { slug } = req.params
         const faculty = await Faculty.findOne({ slug: slug })
 
-        const allNotify = await Notification.find({ faculty: faculty._id })
+        const allNotify = await Notification.find({ faculty: faculty._id }).populate('faculty').sort({ createdAt: -1 });
         return res.status(200).json(allNotify)
     }
 
