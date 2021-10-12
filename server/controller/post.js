@@ -3,6 +3,7 @@ const User = require('../model/User')
 const Faculty = require('../model/Faculty')
 
 class postController {
+    
     // [GET] /post/
     async getAllPost(req, res, next) {
         const posts = await Post.find()
