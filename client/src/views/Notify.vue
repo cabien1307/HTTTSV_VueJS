@@ -394,7 +394,7 @@ export default {
         );
 
         var listItem = ref([]);
-        let perPage = ref(10);
+        let perPage = ref(5);
         let totalPages =
             Math.round(listNotifications.value.length / perPage.value) === 0
                 ? Math.round(listNotifications.value.length / perPage.value) + 1

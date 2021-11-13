@@ -52,7 +52,7 @@
         >
             <div class="img w-full h-1/2">
                 <img
-                    :src="PF + faculty.profilePic"
+                    :src="faculty.profilePic"
                     class="w-4/5 h-full object-cover mx-auto"
                     :alt="faculty.img"
                 />

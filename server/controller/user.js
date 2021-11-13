@@ -33,7 +33,6 @@ class UserController {
         if (foundUser) return res.status(401).json("Email is already exist !")
 
         const newUser = new User(req.value.body);
-        console.log(newUser);
         await newUser.save();
 
         // Encode token

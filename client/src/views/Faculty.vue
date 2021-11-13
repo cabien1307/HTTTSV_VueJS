@@ -45,7 +45,7 @@
             <!-- Info faculty -->
             <div class="w-full py-5 flex space-x-4">
                 <img
-                    :src="PF + getInfoFaculty.profilePic"
+                    :src="getInfoFaculty.profilePic"
                     alt=""
                     class="
                         w-40

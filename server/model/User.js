@@ -70,8 +70,6 @@ UserSchema.pre('save', async function (next) {
     try {
         if (this.authType !== 'local') next();
 
-        
-
         // Generate salt
         const salt = await bcrypt.genSalt(10);
 
